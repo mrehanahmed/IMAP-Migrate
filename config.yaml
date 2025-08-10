@@ -1,0 +1,16 @@
+source:
+  host: imap.source-server.com
+  user: your_source_username
+  pass: your_source_password
+  port: 993
+  ssl: true
+
+destination:
+  host: imap.destination-server.com
+  user: your_destination_username
+  pass: your_destination_password
+  port: 993
+  ssl: true
+
+database:
+  path: migration_resume.db
