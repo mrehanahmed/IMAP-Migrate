@@ -23,6 +23,8 @@ Disconnect.
 
 # Run using the command 
 
+Do not forget to test and confirm before deleting
+
 python imap_move_resume.py --config config.yaml --exclude-file skip_folders.txt --verbose
 
 
