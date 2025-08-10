@@ -11,6 +11,16 @@ Reconnect + retry logic for large mailboxes
 
 Config-driven (YAML for IMAP creds + database)
 
+# The flow:
+
+Connect to source & destination.
+
+Migrate all messages in the folder (with UID tracking in SQLite).
+
+Issue one IMAP MOVE command for the processed UIDs to Migrated/<OriginalFolderName>.
+
+Disconnect.
+
 # Run using the command 
 
 python imap_move_resume.py --config config.yaml --exclude-file skip_folders.txt --verbose
