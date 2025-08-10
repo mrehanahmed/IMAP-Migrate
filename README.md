@@ -23,10 +23,11 @@ Disconnect.
 
 # Run using the command 
 
-Do not forget to test and confirm before deleting
+IMPORTANT: Get the App password for the IMAP Email. (for both SOURCE and DESTINATION mailboxes and update in config.yaml)
 
 python imap_move_resume.py --config config.yaml --exclude-file skip_folders.txt --verbose
 
+Do not forget to test and confirm before deleting
 
 # With optional - Example mapping file (folder_map.yaml) if you want to rename folders during migration:
 
