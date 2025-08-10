@@ -11,7 +11,7 @@ python imap_move_resume.py --config config.yaml --exclude-file skip_folders.txt 
 python imap_move_resume.py --config config.yaml --exclude-file skip_folders.txt --verbose --mapping-file folder_map.yaml 
 
 # What each part means
---config config.yaml → Uses your Yahoo/Microsoft credentials and DB path from config.yaml.
+--config config.yaml → Uses your email credentials and DB path from config.yaml.
 
 --exclude-file skip_folders.txt → Skips folders you don’t want to migrate.
 
