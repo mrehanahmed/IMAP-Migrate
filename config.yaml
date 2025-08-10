@@ -13,4 +13,8 @@ destination:
   ssl: true
 
 database:
-  path: migration_resume.db
+  path: migrate_resume.sqlite  # Local SQLite database to track migrated UIDs
+
+# Optional advanced tuning
+batch_size: 50          # Number of emails per fetch/append batch
+sleep_between: 2        # Seconds to sleep between batches
