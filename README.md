@@ -1,6 +1,16 @@
 # IMAP-Migrate
 IMAP Migration from one email account to another (Non OAuth2)
 
+full ready-to-run IMAP migration script with:
+
+Per-folder move from source to Migrated/<Folder>
+
+SQLite resume support (skips already-migrated emails)
+
+Reconnect + retry logic for large mailboxes
+
+Config-driven (YAML for IMAP creds + database)
+
 # Run using the command 
 
 python imap_move_resume.py --config config.yaml --exclude-file skip_folders.txt --verbose
